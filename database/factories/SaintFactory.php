@@ -4,9 +4,6 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
- */
 class SaintFactory extends Factory
 {
     /**
@@ -19,9 +16,9 @@ class SaintFactory extends Factory
         return [
             // creazione dati random da documentazione
             'nome' => fake()->firstName(),
-            'luogoNascita' => fake()->address(),
-            'dataBenedizione' => fake()->date(),
-            'numeroMiracoli' => fake()->numberBetween(1, 15),
+            'luogo_nascita' => fake()->address(),
+            'data_benedizione' => fake()->date(),
+            'numero_miracoli' => fake()->numberBetween(1, 15),
         ];
     }
 }
