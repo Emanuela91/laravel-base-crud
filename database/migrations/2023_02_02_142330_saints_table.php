@@ -16,9 +16,9 @@ return new class extends Migration {
         Schema::create('saints', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 32);
-            $table->string('luogoNascita', 32);
-            $table->date('dataBenedizione');
-            $table->integer('numeroMiracoli')->unsigned();
+            $table->string('luogo_nascita', 32);
+            $table->date('data_benedizione');
+            $table->integer('numero_miracoli')->unsigned();
             $table->timestamps();
         });
     }

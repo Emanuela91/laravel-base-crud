@@ -17,7 +17,11 @@ class SaintFactory extends Factory
     public function definition()
     {
         return [
-            //
+            // creazione dati random da documentazione
+            'nome' => fake()->firstName(),
+            'luogoNascita' => fake()->address(),
+            'dataBenedizione' => fake()->date(),
+            'numeroMiracoli' => fake()->numberBetween(1, 15),
         ];
     }
 }
