@@ -20,5 +20,10 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        // chiamata al seeder di Saint 
+        $this->call([
+            SaintSeeder::class,
+        ]);
     }
 }
