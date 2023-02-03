@@ -24,8 +24,15 @@ class MainController extends Controller
     {
         $saint = Saint::find($id);
 
+        // riprendo i dati di saint che potrò mostrare in saint.blade.php
+        $data = [
+            'saints' => $saint
+        ];
+
+
+
         // li ritorna alla pagina saint 
-        return view('pages.saint');
+        return view('pages.saint', $data);
     }
 
 }
