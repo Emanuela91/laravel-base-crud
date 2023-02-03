@@ -26,7 +26,7 @@ class MainController extends Controller
 
         // riprendo i dati di saint che potrò mostrare in saint.blade.php
         $data = [
-            'saints' => $saint
+            'saint' => $saint
         ];
 
 
