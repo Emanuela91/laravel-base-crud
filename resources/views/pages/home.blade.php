@@ -3,7 +3,12 @@
 @section('content')
     <ul>
         @foreach ($saints as $saint)
-            <li>{{$saint -> nome}} - Miracoli: {{$saint -> numero_miracoli}} </li>
+            <li>
+                {{-- creo un link per andare poi alla pagina corrispondente al santo --}}
+                <a href="/saint/{{$saint -> id}}">
+                    {{$saint -> nome}} - Miracoli: {{$saint -> numero_miracoli}} 
+                </a>
+            </li>
         @endforeach
     </ul>
 @endsection

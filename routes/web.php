@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', [MainController::class, 'home']);
+
+// creo il collegamento con show per mostrare le caratteristiche dei santi
+Route::get('/saint/{id}', [MainController::class, 'show']);

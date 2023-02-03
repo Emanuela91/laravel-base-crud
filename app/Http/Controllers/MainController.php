@@ -18,4 +18,14 @@ class MainController extends Controller
 
         return view('pages.home', $data);
     }
+
+    // funzione per prendere id dei santi 
+    public function show($id)
+    {
+        $saint = Saint::find($id);
+
+        // li ritorna alla pagina saint 
+        return view('pages.saint');
+    }
+
 }
